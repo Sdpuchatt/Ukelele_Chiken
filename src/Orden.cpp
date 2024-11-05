@@ -27,9 +27,16 @@ void Orden::mostrarDetalleArticulos() {
         detalleArticulo->mostrar();
     }
 }
+double Orden::totalDetalleArticulos(){
+    double suma = 0;
+    for (DetalleArticulo* detalleArticulo : detalleArticulos) {
+        suma += detalleArticulo->precioPorCantidad();
+    }
+    return suma;
+}
 
 void Orden::mostrar() {
-    cout << "\n***************"<< " Ropa de Seguridad " <<"***************"<<endl<<endl;
+    cout << "\n***************"<< " Productos Carnicos " <<"***************"<<endl<<endl;
     cout << "************* Codigo: " << codigo << " ************" << endl;
     cout << "Empleado:" << endl;
     empleado->mostrar();
@@ -39,4 +46,5 @@ void Orden::mostrar() {
     cout << "**************************************" <<endl;
     cout << "Articulos:" << endl;
     mostrarDetalleArticulos();
+    cout << "\n\n\t\tTotal a Pagar : " << totalDetalleArticulos() << endl;
 }

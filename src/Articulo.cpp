@@ -19,5 +19,5 @@ double Articulo::getPrecio(){
 }
 
 void Articulo::mostrar(){
-    cout << "Codigo: " << codigo << " Nombre: " << nombre << " --> Precio Unitario: " << precio << " ";
+    cout << "Cod: " << codigo << " Nombre: " << nombre << " --> Precio Unitario: " << precio << " ";
 }

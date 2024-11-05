@@ -24,6 +24,7 @@ public:
     void mostrar();
     void agregarDetalleArticulo(DetalleArticulo* detalleArticulo);
     void mostrarDetalleArticulos();
+    double totalDetalleArticulos();
 };
 
 #endif

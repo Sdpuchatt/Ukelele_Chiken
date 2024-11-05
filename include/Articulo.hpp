@@ -4,7 +4,7 @@
 #include <string>
 using namespace std;
 class Articulo {
-private:
+protected:
     string codigo;
     string nombre;
     double precio;
@@ -14,7 +14,7 @@ public:
     string getCodigo();
     string getNombre();
     double getPrecio();
-    void mostrar();
+    virtual void mostrar();
 };
 
 #endif
