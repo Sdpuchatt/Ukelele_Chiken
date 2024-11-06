@@ -7,14 +7,14 @@ class Empleado {
 private:
     string codigo;
     string nombre;
-    string direccion;
+    string local;
     string puesto;
 
 public:
-    Empleado(string codigo, string nombre, string direccion, string puesto);
+    Empleado(string codigo, string nombre, string local, string puesto);
     string getCodigo();
     string getNombre();
-    string getDireccion();
+    string getLocal();
     string getPuesto();
     void mostrar();
 };
